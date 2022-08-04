@@ -20,7 +20,7 @@ let from = rlSync.question("Diaposon from ?\n");
 let to = rlSync.question("Diaposon to ?\n");
 console.log(`Diaposon, ${from}-${to}`);
 let col = "red";
-for (let i = from; i <= to; i++) {
+for (let i = Number(from); i <= Number(to); i++) {
   if (isPrimeNum(i)) {
     if (col === "red") {
       col = "green";
