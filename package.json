@@ -8,7 +8,8 @@
   },
   "dependencies": {
     "colors": "^1.4.0",
-    "node": "^18.7.0"
+    "node": "^18.7.0",
+    "readline-sync": "^1.4.10"
   },
   "keywords": [],
   "author": "",
