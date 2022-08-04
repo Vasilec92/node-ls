@@ -62,23 +62,16 @@ const isPrimeNum = (num) => {
 let from = rlSync.question("Diaposon from ?\n");
 let to = rlSync.question("Diaposon to ?\n");
 console.log(`Diaposon, ${from}-${to}`);
-
-for (let i = from; i <= to; i++) {
-  console.log(i);
-}
-
 let col = "red";
 for (let i = from; i <= to; i++) {
   if (isPrimeNum(i)) {
     if (col === "red") {
       col = "green";
       console.log(colors.green(i));
-    }
-    if (col === "green") {
+    } else if (col === "green") {
       col = "yellow";
       console.log(colors.yellow(i));
-    }
-    if (col === "yellow") {
+    } else if (col === "yellow") {
       col = "red";
       console.log(colors.red(i));
     }
